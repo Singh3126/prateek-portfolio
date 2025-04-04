@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prateek Singh - Portfolio</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('teamwork.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      position: relative;
+    }
+
+    /* Overlay */
+    body::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.65);
+      z-index: -1;
+    }
+
+    header {
+      background: rgba(74, 144, 226, 0.9);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeIn 1.5s ease;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1rem;
+      animation: slideUp 1s ease;
+    }
+
+    .profile img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border: 4px solid white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    }
+
+    .resume-btn {
+      margin-top: 1rem;
+      padding: 0.6rem 1.2rem;
+      background: white;
+      color: #4a90e2;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    }
+
+    nav {
+      margin-top: 1.5rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeSlideIn 1s ease forwards;
+    }
+
+    h2 {
+      color: #ffffff;
+      border-bottom: 2px solid #ffffff44;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    ul li::before {
+      content: "🔹 ";
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      backdrop-filter: blur(5px);
+    }
+
+    footer {
+      text-align: center;
+      background: rgba(74, 144, 226, 0.9);
+      color: white;
+      padding: 1rem;
+    }
+
+    a {
+      color: #aadfff;
+    }
+
+    /* Animations */
+    @keyframes fadeSlideIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Prateek Singh</h1>
+    <p>🌟 Welcome to my personal portfolio 🌟</p>
+
+    <div class="profile">
+      <img src="prateek.jpg" alt="Prateek Singh">
+      <a href="resume.pdf" class="resume-btn" download>📄 Download Resume</a>
+    </div>
+
+    <nav>
+      <a href="#introduction">💬 Introduction</a>
+      <a href="#education">🎓 Education</a>
+      <a href="#skills">🧠 Skills</a>
+      <a href="#certificates">📜 Certificates</a>
+      <a href="#resume">📄 Resume</a>
+      <a href="#contact">📇 Contact</a>
+    </nav>
+  </header>
+
+  <section id="introduction">
+    <div class="card">
+      <h2>💬 Introduction</h2>
+      <p>A deeply empathetic and insightful professional, I am driven by a strong sense of purpose and a commitment to making a meaningful impact. With a keen ability to understand and support others, I excel in environments that value integrity, creativity, and personal connection. My combination of idealism, analytical thinking, and emotional intelligence allows me to navigate complex challenges while fostering collaboration and positive change. Passionate about continuous growth, I thrive in roles that align with my values and provide opportunities to contribute meaningfully.</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="card">
+      <h2>🎓 Education</h2>
+      <ul>
+        <li><strong>Bachelor of Business Administration</strong><br> Noida International University (2023 - Present)</li>
+        <li><strong>10+2 From Science Stream</strong><br> Green Valley English School</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="card">
+      <h2>🧠 Skills</h2>
+      <ul>
+        <li>Excel</li>
+        <li>Power BI</li>
+        <li>Leadership</li>
+        <li>Management</li>
+        <li>Team Work</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="certificates">
+    <div class="card">
+      <h2>📜 Certificates</h2>
+      <ul>
+        <li>Time and Productivity Management Technique</li>
+        <li>ChatGPT Advanced Course</li>
+        <li>Business Analysis</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="resume">
+    <div class="card">
+      <h2>📄 Resume Overview</h2>
+      <ul>
+        <li><strong>Education:</strong> Pursuing BBA from Noida International University</li>
+        <li><strong>Skills:</strong> Excel, Power BI, Team Leadership, Management</li>
+        <li><strong>Certifications:</strong> Productivity Management, ChatGPT, Business Analysis</li>
+        <li><strong>Soft Skills:</strong> Empathy, Communication, Problem Solving</li>
+        <li>👉 <a href="resume.pdf" download>Download Full Resume</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="card">
+      <h2>📇 Contact</h2>
+      <p>📧 Email: <a href="mailto:singhprateek0060@gmail.com">singhprateek0060@gmail.com</a></p>
+      <p>📞 Phone: <a href="tel:+917522081514">7522081514</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Prateek Singh. Built with 💙</p>
+  </footer>
+
+</body>
+</html>
